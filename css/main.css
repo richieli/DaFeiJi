@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+
+button{
+	outline:none;
+}
+
+#wrapper{
+	position:absolute;
+	left:480px;
+	border:#000 solid 1px;
+	overflow:hidden;
+}
+
+#startdiv{
+	width:320px;
+	height:500px;
+	background:url(../images/bg_start.png);
+}
+
+#startdiv button{
+	position:absolute;
+	top:400px;
+	left:80px;
+	height:30px;
+	width:150px;
+	border:#000 solid 1px;
+	border-radius:30px;
+	background:#c4c9ca;
+}
+
+#startdiv #author{
+	width:320px;
+	height:30px;
+	background:url(../images/author.png);
+}
+
+#maindiv{
+	width:320px;
+	height:500px;
+	background:url(../images/bg_play.png);
+	display:none;
+}
+
+#maindiv #bgDiv{
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+
+#maindiv img{
+	position:absolute;
+	z-index:1;
+}
+
+#maindiv #bg{
+	z-index:0;
+}
+
+#scorediv{
+	position:absolute;
+	top:10px;
+	left:10px;
+	font-size:18px;
+	font-weight:bold;
+	display:none;
+}
+
+#suspenddiv{
+	position:absolute;
+	top:210px;
+	left:80px;
+	z-index:2;
+	display:none;
+}
+
+#suspenddiv button{
+	width:150px;
+	height:30px;
+	margin-bottom:20px;
+	border:1px solid #000;
+	border-radius:30px;
+	background:#c4c9ca;
+}
+
+#enddiv{
+	position:absolute;
+	top:210px;
+	left:80px;
+	text-align:center;
+	border:1px solid #666;
+	border-radius:5px;
+	background:#d7ddde;
+	z-index:2;
+	display:none;
+}
+
+#enddiv .playScoreText{
+	width:150px;
+	height:30px;
+	line-height:30px;
+	font-size:18px;
+	font-weight:bold;
+}
+
+#enddiv #totalscore{
+	width:150px;
+	height:80px;
+	border-top:1px solid #666;
+	border-bottom:1px solid #666;
+	line-height:80px;
+	font-size:16px;
+	font-weight:bold;
+}
+
+#enddiv div{
+	width:150px;
+	height:50px;
+}
+
+#enddiv div button{
+	margin-top:10px;
+	width:80px;
+	height:30px;
+	border:1px solid #666;
+	border-radius:30px;
+}
